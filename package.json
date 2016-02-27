@@ -1,0 +1,13 @@
+{
+  "name": "ethereum-js-sample",
+  "dependencies": {
+    "async": "^1.5.2",
+    "ethereumjs-tx": "^1.0.0",
+    "web3": "^0.15.2"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}
