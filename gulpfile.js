@@ -1,6 +1,7 @@
 var browserify = require('browserify'),
   watchify = require('watchify'),
   gulp = require('gulp'),
+  mocha = require('gulp-mocha'),
   source = require('vinyl-source-stream'),
   sourceFile = './web/src/app.js',
   destFolder = './web/dist/',
@@ -30,5 +31,10 @@ gulp.task('watch', function() {
   }
 });
 
+gulp.task('test', function() {
+  return gulp
+    .src('test/*.js')
+    .pipe(mocha());
+});
 
 gulp.task('default', ['browserify']);
